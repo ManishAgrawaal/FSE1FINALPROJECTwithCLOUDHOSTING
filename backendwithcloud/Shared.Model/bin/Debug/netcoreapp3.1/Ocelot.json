@@ -1,0 +1,127 @@
+{
+  "Routes": [
+    //for login
+    {
+      "DownstreamPathTemplate": "/api/Login/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Login/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+      
+    //for Adding order
+    {
+      "DownstreamPathTemplate": "/api/Order/add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Order/add",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //for history of order details
+
+    {
+      "DownstreamPathTemplate": "/api/OrderHistory/ViewDetails",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/OrderHistory/ViewDetails",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    // for getting of allproduct details 
+
+    {
+      "DownstreamPathTemplate": "/api/Product/All",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Product/All",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    //for adding new product
+    {
+      "DownstreamPathTemplate": "/api/Product/productname/add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Product/productname/add",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    // updation of product details by product id
+    {
+      "DownstreamPathTemplate": "/api/Product/productname/update/id",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Product/productname/update/id",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+
+    // deletion of product by product id
+    {
+      "DownstreamPathTemplate": "/api/Product/productname/delete/id",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Product/productname/delete/id",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+
+    // for user registration
+    {
+      "DownstreamPathTemplate": "/api/Register/registration",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/Register/registration",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+
+
+
+
+
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:18912"
+  }
+}

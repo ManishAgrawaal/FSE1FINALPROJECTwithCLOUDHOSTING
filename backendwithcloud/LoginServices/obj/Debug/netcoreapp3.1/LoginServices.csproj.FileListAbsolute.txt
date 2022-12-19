@@ -1,0 +1,7 @@
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.csproj.AssemblyReference.cache
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.AssemblyInfoInputs.cache
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.AssemblyInfo.cs
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.csproj.CoreCompileInputs.cache
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.MvcApplicationPartsAssemblyInfo.cs
+D:\ShoppingProject\LoginServices\obj\Debug\netcoreapp3.1\LoginServices.MvcApplicationPartsAssemblyInfo.cache

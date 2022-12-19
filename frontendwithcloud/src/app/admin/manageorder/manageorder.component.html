@@ -1,0 +1,38 @@
+<app-header></app-header>
+<br><br>
+<section class="mb-5">
+    <div class="container">
+     <div class="row">
+     <div class="col-12">
+         <div class="card shadow border-primary">
+             <div class="card-header border-0 bg-primary">
+                 <h5 class="mb-0 text-white">Manage Order</h5>
+                     </div>
+                     <br><br>
+           <div class="table-responsive">
+             <table class="table align-items-center table-flush">
+                 <thead class="thead-light">
+                     <tr>
+                         <th scope="col">#</th>
+                         <th scope="col">Product ID</th>
+                         <th scope="col">Customer ID</th>
+                         <th scope="col">Date</th>
+                         <th scope="col">Order Id</th> 
+                     </tr>
+                    <tr *ngFor="let ord of getData">
+                         <td>{{ord.id}}</td>
+                         <td>{{ord.productid}}</td>
+                         <td>{{ord.customerid}}</td>
+                         <td>{{ord.date}}</td>
+                         <td>{{ord.orderid}}</td>
+                   </tr>
+                 
+                 </thead>
+             </table>
+            </div>          
+         </div>
+     </div>
+     </div>
+    </div>
+ </section>
+ 

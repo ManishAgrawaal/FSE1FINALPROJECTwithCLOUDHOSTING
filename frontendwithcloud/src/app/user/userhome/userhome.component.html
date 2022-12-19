@@ -1,0 +1,71 @@
+<br><br>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card shadow border-primary" style="padding:30px" >
+          <form class="row">
+            <div class="col-12 text-center text-white bg-dark mb-2"><h5>-Your great stores and great choices-</h5></div>
+            <div class="col-6">
+                    <div class="input-group">
+                      <!--<div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Product Name</span>
+                      </div>-->
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+            </div>
+          <!---- <div class="col-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">To</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            
+            </div>
+            <div class="col-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Date</span>
+                    </div>
+                    <input type="date" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                </div>            </div>-->
+            <div class="col-6">
+                <button type="Submit" class="block btn-success ">Search Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-3 border text-center pt-4 pb-4 bg-primary" *ngFor="let prod of getData">
+        <h5>{{prod.productname}}</h5>
+        <h5>Price:{{prod.price}}</h5>
+        <form>
+          <input type="hidden" name="productid" ngModel="{{prod.id}}"/>
+          <input type="hidden" ngModel="2010" name="customerid"/>
+
+          <button type="submit" class="btn btn-primary" (click)="BookProduct()">Book</button>
+        </form>
+        
+      </div>     
+    </div>
+  </div>
+<br>
+
+
+
+
+  <div class="container" style="margin-bottom: 60px;">
+    <div class="row">
+      <div class="col-12">
+      <img src="assets/home-banner.jpg" class="img-responsive" width="100%"/>
+    </div>
+    </div>
+
+    
+</div>
+</section>
